@@ -28,6 +28,6 @@ app.post("/post_name", async (request, response) => {
 	console.log(name)
 })
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
     console.log("Server Started...")
 })

@@ -5,7 +5,7 @@ function MyReservations() {
 	const [ home, setHome ] = useState("")
 
 	useEffect(() => {
-		axios.get("http://localhost:5000/home").then(function(response) {
+		axios.get("http://ec2-44-205-128-120.compute-1.amazonaws.com:30001/home").then(function(response) {
 			setHome(response.data)
 		})
 	}, [])
